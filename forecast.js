@@ -12,7 +12,7 @@ function getForecast(){
     
     if(city != '' && days != ''){
         $.ajax({
-            url:'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + "&units=metric" + "&cnt=" + days + "&APPID=182b7f779bdd3f95066f024e90e815b5",
+            url:'https://cors.now.sh/http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + "&units=metric" + "&cnt=" + days + "&APPID=182b7f779bdd3f95066f024e90e815b5",
             type: "GET",
             dataType: "jsonp",
             success: function(data){
