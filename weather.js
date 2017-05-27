@@ -11,7 +11,7 @@ function getWeather(){
     var city = $("#city").val();
     if(city != ''){
         $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q='+ city + "&units=metric" + "&APPID=182b7f779bdd3f95066f024e90e815b5",
+            url: 'https://cors.now.sh/http://api.openweathermap.org/data/2.5/weather?q='+ city + "&units=metric" + "&APPID=182b7f779bdd3f95066f024e90e815b5",
             type:"GET",
             dataType: "jsonp",
             success: function(data){
